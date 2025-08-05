@@ -1936,8 +1936,8 @@
         };
 
         // Ensure admin and amit users exist with default credentials
-        const adminUpdated = ensureUser(adminUsername, 'aminehu@123', defaultPic); // Admin uses portal logo
-        const amitUpdated = ensureUser(amitUsername, 'aminehu@123'); // Amit uses portal logo
+        const adminUpdated = ensureUser(adminUsername, '123', defaultPic); // Admin uses portal logo
+        const amitUpdated = ensureUser(amitUsername, '123'); // Amit uses portal logo
 
         if (adminUpdated || amitUpdated) {
             saveUsers(users); // Save if any user was created or updated
